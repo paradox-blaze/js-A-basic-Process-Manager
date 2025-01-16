@@ -2089,3 +2089,15 @@ Possible causes: the network is offline, Origin is not allowed by Access-Control
 [40758:0116/120014.092606:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
 2025-01-16 12:13:36.109 Alacritty[41141:8698242] +[IMKClient subclass]: chose IMKClient_Modern
 2025-01-16 12:13:36.109 Alacritty[41141:8698242] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+2025-01-16 15:04:20.718 Alacritty[49402:8766928] +[IMKClient subclass]: chose IMKClient_Modern
+2025-01-16 15:04:20.718 Alacritty[49402:8766928] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+2025-01-16 15:06:56.048 Alacritty[49811:8768942] +[IMKClient subclass]: chose IMKClient_Modern
+2025-01-16 15:06:56.048 Alacritty[49811:8768942] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[50233:0116/151058.783219:ERROR:ffmpeg_common.cc(965)] Unsupported pixel format: -1
+2025-01-16 15:11:00.695 Discord Helper (Renderer)[50269:8772310] CFURLCopyResourcePropertyForKey failed because it was passed a URL which has no scheme
+15:11:01.001 › [Spellchecker] sh is not a valid locale.
+[50269:0116/151101.647823:ERROR:ffmpeg_common.cc(965)] Unsupported pixel format: -1
+2025-01-16 15:11:01.921 Discord[50204:8772044] +[IMKClient subclass]: chose IMKClient_Modern
+2025-01-16 15:11:01.921 Discord[50204:8772044] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+15:11:04.967 › [NativeDispatchUtils] Tried getting Dispatch instance before instantiated
+15:11:04.968 › [GuildAvailabilityStore] 1 guilds are unavailable on connection open: 1024526103450243082

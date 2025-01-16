@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     {
         string AppName = argv[2];
         json data;
-        ifstream inFile("/datastore.json");
+        ifstream inFile("datastore.json");
         inFile >> data;
         inFile.close();
         pid_t pid = fork();
@@ -223,7 +223,10 @@ int main(int argc, char *argv[])
     else if (command == "show")
     {
         json data;
-        ifstream inFile("pids.json");
+        ifstream inFile("datastore.json");
+        ifstream inPids("pids.json");
+        json pids;
+        inPids >> pids;
         if (!inFile)
         {
             cerr << "Error opening file" << endl;
@@ -232,7 +235,14 @@ int main(int argc, char *argv[])
         inFile >> data;
         for (auto &[key, value] : data.items())
         {
-            cout << value << " " << key << endl;
+            if (pids.contains(key))
+            {
+                cout << "running " << pids[key] << "\t" << key << endl;
+            }
+            else
+            {
+                cout << "not running " << "\t" << key << endl;
+            }
         }
     }
     else if (command == "-help")
